@@ -1,0 +1,5 @@
+# Launch the flask app using gunicorn
+gunicorn -k gthread -w 2 -t 40000 --threads 3 -b:5000 app:app
+
+# Generate the request
+curl 0.0.0.0:5000/kafka/push_to_consumers -X POST -H 'Content-type: application/json' -d '{"data": "test"}'

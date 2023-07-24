@@ -1,5 +1,6 @@
 import json
 from time import sleep
+
 from kafka import KafkaProducer
 from shared import logger
 

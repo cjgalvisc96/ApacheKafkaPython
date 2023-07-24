@@ -1,7 +1,7 @@
 import json
+
 from kafka import KafkaConsumer
 from shared import logger
-
 
 SERVICE_B_KAFKA_TOPIC = "service_b_kafka_topic"
 MESSAGE_DEFAULT_ENCODE = "utf-8"
